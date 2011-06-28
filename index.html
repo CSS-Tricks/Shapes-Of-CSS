@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='UTF-8'>
+	
+	<title>The Shapes of CSS</title>
+	
+	<link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body>
+	
+	<div id="page-wrap">
+	
+		<h1>The <span>Shapes</span> of CSS</h1>
+		
+		<p>All of the below use only a single HTML element. Any kind of CSS goes, 
+		   as long as it's supported in at least one browser.</p>
+		
+		<div id="shapes">
+				
+				<div class="shape">
+					<h2>Square</h2>
+					<div id="square"></div>
+					<style contenteditable>
+#square {
+	width: 100px;
+	height: 100px;
+	background: red;
+}
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+					<h2>Rectangle</h2>
+					<div id="rectangle"></div>
+					<style contenteditable>
+#rectangle {
+	width: 200px;
+	height: 100px;
+	background: red;
+}
+					</style>
+				
+			
+			</div>
+						
+				<div class="shape">
+					<h2>Circle</h2>
+					<div id="circle"></div>
+					<style contenteditable>
+#circle {
+	width: 100px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+					<h2>Oval</h2>
+					<div id="oval"></div>
+					<style contenteditable>
+#oval {
+	width: 200px;
+	height: 100px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+					</style>
+				
+				</div>
+				
+						
+				<div class="shape">
+					<h2>Triangle Up</h2>
+					<div id="triangle-up"></div>
+					
+					<style contenteditable>
+#triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+}
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+					<h2>Triangle Down</h2>
+					<div id="triangle-down"></div>
+					<style contenteditable>
+#triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+}				
+					</style>
+				</div>
+				
+				<div class="shape">
+					<h2>Triangle Left</h2>
+					<div id="triangle-left"></div>
+					<style contenteditable>
+#triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+}
+					</style>
+				</div>
+				
+				<div class="shape">
+					<h2>Triangle Right</h2>
+					<div id="triangle-right"></div>
+					<style contenteditable>
+#triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-left: 100px solid red;
+	border-bottom: 50px solid transparent;
+}		
+					</style>
+				</div>
+
+				
+				<div class="shape">
+					<h2>Triangle Top Left</h2>
+					<div id="triangle-topleft"></div>
+					<style contenteditable>
+#triangle-topleft {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red; 
+	border-right: 100px solid transparent;			
+}
+					</style>
+				</div>
+				
+				<div class="shape">
+				<h2>Triangle Top Right</h2>
+				<div id="triangle-topright"></div>
+				<style contenteditable>
+#triangle-topright {
+	width: 0;
+	height: 0;
+	border-top: 100px solid red; 
+	border-left: 100px solid transparent;
+	
+}		
+				</style>
+				</div>
+				
+				<div class="shape">
+					<h2>Triangle Bottom Left</h2>
+					<div id="triangle-bottomleft"></div>
+					<style contenteditable>
+#triangle-bottomleft {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red; 
+	border-right: 100px solid transparent;	
+}		
+					</style>
+				</div>
+				
+				<div class="shape">
+					<h2>Triangle Bottom Right</h2>
+					<div id="triangle-bottomright"></div>
+					<style contenteditable>
+#triangle-bottomright {
+	width: 0;
+	height: 0;
+	border-bottom: 100px solid red; 
+	border-left: 100px solid transparent;
+}				
+					</style>
+				</div>
+				
+				<div class="shape">		
+			
+					<h2>Parallelogram</h2>
+					
+					<div id="parallelogram"></div>
+					
+					<style contenteditable>
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
+}
+					</style>
+				
+				</div>	
+				
+				<div class="shape">
+				
+					<h2>Trapezoid</h2>
+					
+					<div id="trapezoid"></div>
+				
+					<style contenteditable>
+#trapezoid {
+	border-bottom: 100px solid red;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	height: 0;
+	width: 100px;
+}
+					</style>
+				
+				</div>
+			
+				<div class="shape">
+				
+					<h2>Star (6-points)</h2>
+					
+					<div id="star-six"></div>
+					
+					<style contenteditable>
+#star-six {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 100px solid red;
+	position: relative;
+}
+#star-six:after {
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid red;
+	position: absolute;
+	content: "";
+	top: 30px;
+	left: -50px;
+}
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+				
+					<h2>Star (5-points) <a href="http://kitmacallister.com/2011/css-only-5-point-star/">via Kit MacAllister</a></h2>
+					
+					<div id="star-five"></div>
+					
+					<style contenteditable>
+#star-five {
+   margin: 50px 0;
+   position: relative;
+   display: block;
+   color: red;
+   width: 0px;
+   height: 0px;
+   border-right:  100px solid transparent;
+   border-bottom: 70px  solid red;
+   border-left:   100px solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+}
+#star-five:before {
+   border-bottom: 80px solid red;
+   border-left: 30px solid transparent;
+   border-right: 30px solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px;
+   left: -65px;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+   
+}
+#star-five:after {
+   position: absolute;
+   display: block;
+   color: red;
+   top: 3px;
+   left: -105px;
+   width: 0px;
+   height: 0px;
+   border-right: 100px solid transparent;
+   border-bottom: 70px solid red;
+   border-left: 100px solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+}
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+				
+					<h2>Pentagon</h2>
+					
+					<div id="pentagon"></div>
+				
+					<style contenteditable>
+#pentagon {
+    position: relative;
+    width: 54px;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    border-color: red transparent;
+}
+#pentagon:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -85px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent red;
+}
+					</style>
+				
+				</div>
+			
+				<div class="shape">
+				
+					<h2>Hexagon</h2>
+					
+					<div id="hexagon"></div>
+					
+					<style contenteditable>
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+#hexagon:before {
+	content: "";
+	position: absolute;
+	top: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 25px solid red;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 25px solid red;
+}
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+				
+					<h2>Octagon</h2>
+					
+					<div id="octagon"></div>
+					
+					<style contenteditable>
+#octagon {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+}
+
+#octagon:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;    
+	border-bottom: 29px solid red;
+	border-left: 29px solid #eee;
+	border-right: 29px solid #eee;
+	width: 42px;
+	height: 0;
+}
+
+#octagon:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;    
+	border-top: 29px solid red;
+	border-left: 29px solid #eee;
+	border-right: 29px solid #eee;
+	width: 42px;
+	height: 0;
+}				
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+				
+					<h2>Heart <a href="http://nicolasgallagher.com/">via Nicolas Gallagher</a></h2>
+					
+					<div id="heart"></div>
+					
+					<style contenteditable>
+#heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+}
+#heart:before,
+#heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: red;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}				
+					</style>
+				
+				</div>
+				
+				<div class="shape">
+				
+					<h2>Infinity <a href="http://nicolasgallagher.com/">via Nicolas Gallagher</a></h2>
+					
+					<div id="infinity"></div>
+					
+					<style contenteditable>
+#infinity {
+    position: relative;
+    width: 212px;
+    height: 100px;
+}
+
+#infinity:before,
+#infinity:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;    
+    border: 20px solid red;
+    -moz-border-radius: 50px 50px 0 50px;
+         border-radius: 50px 50px 0 50px;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#infinity:after {
+    left: auto;
+    right: 0;
+    -moz-border-radius: 50px 50px 50px 0;
+         border-radius: 50px 50px 50px 0;
+    -webkit-transform:rotate(45deg);
+       -moz-transform:rotate(45deg);
+        -ms-transform:rotate(45deg);
+         -o-transform:rotate(45deg);
+            transform:rotate(45deg);
+}			
+					</style>
+				
+				</div>
+			
+		
+		</div>
+	
+	</div>
+	
+</body>
+
+</html>
